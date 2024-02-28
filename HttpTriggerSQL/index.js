@@ -28,26 +28,27 @@ module.exports = async function (context, req) {
     const newObject = Object.assign({}, results)
 
     let locations = results.map(user => user.Messages)
-// TESTS
-      // console.log(typeof(result))
-      // console.log(eval(result))
-      // console.log(result.keys())
-      // console.log(JSON.parse(result))
-      // console.log(newObject[1])
-      // console.log(Object.prototype.toString.call(result), "result")
-      // console.log(Object.prototype.toString.call(results), "results")
-      // console.log(Object.prototype.toString.call(newObject), "newObject")
-      // console.log(Object.prototype.toString.call(locations), "locations")
-      // console.log({locations}.toString.call(), "butt") // this doesn't work, don't use it
-      // console.log(Array.isArray(results), "Array")
-      // console.log(Object.isArray(results), "Array2") // this doesn't work, don't use it
-      // console.log(Object.isObject(results), "Array3") // this doesn't work, don't use it
-      // let i = 0;
 
-      // while (i < results.length) {
-      //     console.log(results[i].Messages);
-      //     i++;
-      // }
+        // TESTS
+        // console.log(typeof(result))
+        // console.log(eval(result))
+        // console.log(result.keys())
+        // console.log(JSON.parse(result))
+        // console.log(newObject[1])
+        // console.log(Object.prototype.toString.call(result), "result")
+        // console.log(Object.prototype.toString.call(results), "results")
+        // console.log(Object.prototype.toString.call(newObject), "newObject")
+        // console.log(Object.prototype.toString.call(locations), "locations")
+        // console.log({locations}.toString.call(), "butt") // this doesn't work, don't use it
+        // console.log(Array.isArray(results), "Array")
+        // console.log(Object.isArray(results), "Array2") // this doesn't work, don't use it
+        // console.log(Object.isObject(results), "Array3") // this doesn't work, don't use it
+        // let i = 0;
+
+        // while (i < results.length) {
+        //     console.log(results[i].Messages);
+        //     i++;
+        // }
 
     context.res = {
       body: results,
